@@ -1,0 +1,118 @@
+:root {
+    --verde1: #CCD5AE;
+    --verde2: #E9EDC9;
+    --blanco: #FCFBF8;
+    --cafe1: #FAEDCD;
+    --cafe2: #D4A373;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 70%;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--blanco);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 4.8rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.justify {
+    text-align: justify;
+}
+
+
+.header{
+    height: 30rem;
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: -3.5rem;
+}
+
+.logo_nombre{
+    font-weight: 700;
+}
+
+.logo_bold{
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.navegacion {
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--blanco);
+}
+
+nav a {
+    color: var(--blanco);
+    flex-grow: 1;
+}
+
+.subtitle {
+    display: flex;
+    text-align: center;
+}
+
+article p {
+    flex-grow: 1;
+    font-weight: 700;
+}
+
+.footer{
+    background-color: var(--verde1);
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+}
