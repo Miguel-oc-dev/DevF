@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <div class="header_texto">
@@ -29,12 +31,12 @@
 
     <main class="contenedor">
         <section>
-            <h1>Perfil Profesional</h1>
+            <h1><i class="fas fa-user"></i>Perfil Profesional</h1>
             <p class="justify">Graduado en ingeniería en computación especializado en el desarrollo web en constante búsqueda de expansión profesional, apasionado de la tecnología y sus posibilidades de beneficiar a la sociedad contando con una solida formación teórica y practica encaminado a desarrollar y aplicar mis habilidades en programación, análisis de sistemas, resolución de problemas. Entusiasmado en la contribución de proyectos retadores.</p>
         </section>
 
-        <section>
-            <h2>Educación</h2>
+        <section class="educacion">
+            <h2><i class="fas fa-graduation-cap"></i> Educación</h2>
             <article>
                 <div class="subtitle">
                     <p>UNAM, FES Aragón</p>
@@ -67,8 +69,8 @@
             </article>
         </section>
 
-        <section>
-            <h2>Experiencia Profesional</h2>
+        <section class="experiencia">
+            <h2><i class="fas fa-briefcase"></i>Experiencia Profesional</h2>
             <article>
                 <div class="subtitle">
                     <p>ACCENTURE POLANCO</p>
@@ -86,10 +88,10 @@
             </article>
         </section>
 
-        <section>
-            <h2>Proyectos Académicos</h2>
+        <section class="proyectos">
+            <h2><i class="fas fa-project-diagram"></i>Proyectos Académicos</h2>
             <article>
-                <p>Aplicación web donde se registra los hoteles de la parte turistica del municipio de Zacatlán, Puebla donde se cuenta con una base de datos. El sistema almacena, consulta, modifica y borra los hoteles que se tienen dados de alta en el corredor mágico de Zacatlán, donde la vista hace referencia a las caracteristicas del municipio, asi como las cualidades del hotel y habitaciones que se almacenen.</p>
+                <a>Aplicación web donde se registra los hoteles de la parte turistica del municipio de Zacatlán, Puebla donde se cuenta con una base de datos. El sistema almacena, consulta, modifica y borra los hoteles que se tienen dados de alta en el corredor mágico de Zacatlán, donde la vista hace referencia a las caracteristicas del municipio, asi como las cualidades del hotel y habitaciones que se almacenen.</a>
                 <p>Tecnologías:</p>
                 <ul>
                     <li>HTML, CSS, JavaScript, Node.js, Express, MySQL</li>
@@ -97,23 +99,64 @@
             </article>
         </section>
 
-        <aside>
-            <h2>Habilidades e Intereses</h2>
+        <aside class="habilidades">
+            <h2><i class="fas fa-code"></i>Habilidades e Intereses</h2>
             <ul>
-                <li>Lenguajes de programación: Python, MySQL, Java, HTML, JavaScript, CSS</li>
                 <li>Lenguas: Español[Nativo]; Inglés[B1]</li>
-                <li>Gestión de herramientas: React, Node.js</li>
                 <li>Conocimientos en mejora continua</li>
+                <li>Comunicación asertiva</li>
+                <li>Liderazgo y trabajo en equipo</li>
                 <li>Uso de metodologías de administración de tiempos como Scrum y Kanban</li>
-                <li>Manejo de bases de datos: MySQL, MongoDB</li>
             </ul>
         </aside>
+
+        <section class="habilidades-tecnicas">
+            <h2><i class="fas fa-tools"></i> Habilidades Técnicas</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Fontend</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, Python, Java</p>
+                </div>
+                <div class="grid-item">
+                    <h3>DB</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="grid-item">
+                    <h3>DevOps</h3>
+                    <p>Docker, Jenkins, CI/CD</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="logros">
+            <h2><i class="fas fa-trophy"></i> Logros Destacados</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h3>Certificación ISC2</h3>
+                    <p>Certificación como ingeniero en ciberseguridad</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Proyecto Open Source</h3>
+                    <p>Desarrollador principal de un proyecto open source</p>
+                </div>
+                <div class="flex-item">
+                    <h3>Certificación AWS</h3>
+                    <p>Certificación de Arquitecto de Soluciones AWS.</p>
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer class="footer">
         <div class="contenedor">
             <h3>iMike</h3>
-            <p>Contactame! <a href="mailto:miguel.oc.dev@gmail.com">miguel.oc.dev@gmail.com</a>.</p>
+            <p>Contactame! <a href="mailto:miguel.oc.dev@gmail.com">miguel.oc.dev@gmail.com</a></p>
         </div>
     </footer>
 </body>
