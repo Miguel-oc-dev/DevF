@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    height: 50rem;
+    width: 80rem;
+    background-color: darkslateblue;
+    grid-template-columns: repeat(3, 20rem);
+    grid-template-rows: auto;
+    place-content: start center;
+    place-items: center;
+}
+
+.box{
+    background-color: crimson;
+    height: 10rem;
+    width: 10rem;
+}

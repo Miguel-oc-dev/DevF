@@ -1,0 +1,28 @@
+header{
+    background-color: rgba(227, 150, 18, 0.992);
+    height: 100rem;
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    height: 100rem;
+    width: 100%;
+}
+
+.box{
+    background-color: crimson;
+    width: 20rem;
+    height: 20rem;
+    text-align: center;
+}
+
+#special-box{
+    background-color: cornflowerblue;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+}
