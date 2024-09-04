@@ -1,0 +1,10 @@
+h1, h2{
+    text-align: center;
+}
+
+#semaforoInicial{
+    width: 150px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
