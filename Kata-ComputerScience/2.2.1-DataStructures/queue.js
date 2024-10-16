@@ -11,7 +11,7 @@ class Queue {
     }
 
     dequeue(){
-                let dequeueElement = this.#queue[this.#queue.length - 1];
+        let dequeueElement = this.#queue[this.#queue.length - 1];
         let newQueue = [];
         for(let i = 0; i < this.#queue.length - 1; i++){
             newQueue[i] = this.#queue[i];
