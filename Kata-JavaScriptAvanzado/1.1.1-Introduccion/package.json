@@ -1,0 +1,19 @@
+{
+  "name": "1.1.1-introduccion",
+  "version": "1.0.0",
+  "description": "Iniciando con NPM en el curso de DEV.F",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "npm run build webpack",
+    "dev": "nodemon index.js"
+  },
+  "author": "Miguel Contreras",
+  "license": "ISC",
+  "dependencies": {
+    "is-odd": "^3.0.1",
+    "nodemon": "^3.1.7",
+    "request": "^2.88.2"
+  }
+}
