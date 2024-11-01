@@ -1,0 +1,11 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "Pagina web donde se ppuede consultar pokmones y leer informacion sobre cada especie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Miguel Contreras",
+  "license": "ISC"
+}
