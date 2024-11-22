@@ -1,8 +1,8 @@
 {
-  "name": "proyectofinal",
+  "name": "pokedex",
   "version": "1.0.0",
-  "description": "Pagina web donde se ppuede consultar pokmones y leer informacion sobre cada especie.",
-  "main": "app.js",
+  "description": "Proyecto final donde se puede consultar la informacion de cada pokemon mediante tarjetas",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
