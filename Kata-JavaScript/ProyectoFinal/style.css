@@ -51,6 +51,8 @@ h1 {
     padding: 10px 20px;
     width: 100%;
     transition: background-color 0.3s ease;
+    padding: 5% 10%;
+    margin-top: 10px;
 }
 
 .btn:hover {

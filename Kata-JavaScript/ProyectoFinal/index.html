@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cajero Automático - App</title>
+  <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="app.js" defer></script>
+  <title>Cajero Automático - App</title>
+
 </head>
 <body>
-  <div class="container">
-    <h1 class="text-center my-4">Cajero Automático</h1>
 
+  <div class="container">
+    <h1>Cajero Automático</h1>
     <!-- Opciones de Cajero -->
-    <div id="cajeroSection">
-      <h3>Bienvenido, <span id="cuentaNombre"></span></h3>
+    <h3>Bienvenido, <span id="cuentaNombre"></span></h3>
       <button id="consultarSaldoBtn" class="btn btn-info">Consultar Saldo</button>
       <button id="ingresarMontoBtn" class="btn btn-success">Ingresar Monto</button>
       <button id="retirarMontoBtn" class="btn btn-danger">Retirar Monto</button>
       <p id="operacionResultado" class="mt-3"></p>
 
       <!-- Sección de Ingresar/Retirar -->
-      <div id="transaccionSection" class="mt-3" style="display: none;">
-        <input type="number" id="montoInput" class="form-control" placeholder="Monto">
-        <button id="confirmarTransaccionBtn" class="btn btn-primary mt-3">Confirmar</button>
-      </div>
+    <div id="transaccionSection" class="mt-3" style="display: none;">
+      <input type="number" id="montoInput" class="form-control" placeholder="Monto">
+      <button id="confirmarTransaccionBtn" class="btn btn-primary mt-3">Confirmar</button>
     </div>
   </div>
 
-  <script src="app.js"></script>
 </body>
 </html>
