@@ -1,4 +1,8 @@
-export default function ElementoLIComponent(){
-    
-    return <li>Tarea Pendiente <button>Completar</button></li>
+export default function ElementoLIComponent(
+    { 
+        textoTarea,
+        accionBoton =() => {console.log('Boton presionado')} 
+    }
+){
+    return <li>{textoTarea} <button onClick={accionBoton}>Completar</button></li>
 }
