@@ -1,6 +1,7 @@
+import { useState } from "react";
+
 import ListaDesordenadaComponent from "./ListaDesordenadaComponents";
 import CabeceraListaTareasComponent from "./CabeceraListaTareasComponent";
-import { useState } from "react";
 
 // 1. Crear la función del componente. 
 function ListaDeTareasComponent({ titulo = 'Lista de tareas' }) {
@@ -22,7 +23,7 @@ function ListaDeTareasComponent({ titulo = 'Lista de tareas' }) {
         El segundo elemento del arreglo es la función que nos permitirá modificar la variable de estado. 
         NO SE PUEDE modificar una variable de estado con el operador de asignación (=) */
     let [contador, setContador] = useState(0);
-    let [tareas, setTareas] = useState(['Tender la cama', 'Limpiar cajas de arena', 'Cocinar']);
+    let [tareas, setTareas] = useState([]);
 
     function modificarContador(e){
         setContador(contador + 1);

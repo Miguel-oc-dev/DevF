@@ -5,10 +5,12 @@ function App() {
 
   return (
     <>
-      <ListaDeTareasComponent titulo = 'Trabajo' descripcion = 'Tareas del trabajo'/>
+      <ListaDeTareasComponent titulo = 'Trabajo' ejecutarContador={false}/>
       <ListaDeTareasComponent titulo = 'Hogar'/>
       <ListaDeTareasComponent titulo = 'Escuela'/>
       <ListaDeTareasComponent titulo = 'Mascotas'/>
+
+      <ListaDeTareasComponent/>
     </>
   )
 }
