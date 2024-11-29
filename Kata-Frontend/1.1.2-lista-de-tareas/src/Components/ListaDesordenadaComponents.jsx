@@ -9,7 +9,12 @@ export default function ListaDesordenadaComponent({ accionElementoLI, tareas }) 
 
     return (
         <ul>
-            { tareas.map((tarea) => <ElementoLIComponent textoTarea={tarea}></ElementoLIComponent>) }
+            {tareas.map((tarea, index) => <ElementoLIComponent 
+                key = {index} 
+                valorIndice={index}
+                textoTarea={tarea} 
+                accionBoton={accionElementoLI}>
+            </ElementoLIComponent>) }
         </ul>
     );
 }

@@ -21,7 +21,6 @@ function ListaDeTareasComponent({ titulo = 'Lista de tareas' }) {
         useState() nos regresa un arreglo. El primer elemento del arreglo es la variable de estado.
         El segundo elemento del arreglo es la función que nos permitirá modificar la variable de estado. 
         NO SE PUEDE modificar una variable de estado con el operador de asignación (=) */
-
     let [contador, setContador] = useState(0);
     let [tareas, setTareas] = useState(['Tender la cama', 'Limpiar cajas de arena', 'Cocinar']);
 
@@ -29,14 +28,23 @@ function ListaDeTareasComponent({ titulo = 'Lista de tareas' }) {
         setContador(contador + 1);
     }
 
-    function completarTarea() {
+    function completarTarea(indiceTareaAEliminar) {
         alert('Tarea completada');
+        let tareasFiltradas = tareas.filter((tarea, index) => indiceTareaAEliminar != index);
+        setTareas(tareasFiltradas);
+    }
+
+    function agregarTarea(nuevaTarea){
+        alert('Agregando tarea');
+        let tareasNuevas = [...tareas];
+        tareasNuevas.push(nuevaTarea);
+        setTareas(tareasNuevas);
     }
 
     // 2. Agregar el return con lo que se verá en pantalla
     return (
         <>
-            <CabeceraListaTareasComponent titulo={titulo}/>
+            <CabeceraListaTareasComponent titulo={titulo} eventoAgregarTarea={agregarTarea}/>
             <ListaDesordenadaComponent accionElementoLI={completarTarea} tareas={tareas}/>
 
             {/*

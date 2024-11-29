@@ -1,8 +1,9 @@
 export default function ElementoLIComponent(
     { 
         textoTarea,
-        accionBoton =() => {console.log('Boton presionado')} 
+        accionBoton =() => {console.log('Boton presionado')},
+        valorIndice
     }
 ){
-    return <li>{textoTarea} <button onClick={accionBoton}>Completar</button></li>
+    return <li>{textoTarea} <button onClick={() => accionBoton(key)}>Completar</button></li>
 }

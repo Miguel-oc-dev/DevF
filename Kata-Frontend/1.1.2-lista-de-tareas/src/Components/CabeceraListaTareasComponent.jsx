@@ -1,10 +1,10 @@
-function CabeceraListaTareasComponent({ titulo = 'Titulo provisional'}) {
+function CabeceraListaTareasComponent({ titulo = 'Titulo provisional', eventoAgregarTarea}) {
     
     return (
         <>
             <h1>{titulo}</h1>
-            <label>Tarea: </label> <input type="text" />
-            <button>Agregar tarea</button>
+            <label>Tarea: </label> <input type='text' />
+            <button onClick={() => {agregarTarea('Nueva tarea')}}>Agregar tarea</button>
         </>
     );
 }
