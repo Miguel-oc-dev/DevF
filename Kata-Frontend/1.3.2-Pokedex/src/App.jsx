@@ -1,17 +1,15 @@
-import { useEffect } from 'react'
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+import RoutesIndex from './routes/RoutesIndex'
 
 function App() {
 
-  useEffect(() => {
-    console.log('Pokédex');
-  }, []);
-  
-  return(
-    <>
-      <h1>Pokédex</h1>
-    </>
+  return (
+    <BrowserRouter>
+      <RoutesIndex/>
+    </BrowserRouter>
   )
+  
 }
 
 export default App
