@@ -13,3 +13,108 @@ body {
 }
 
 /*Header pricipal*/
+.header{
+    background-color: #b1040e;
+    color: white;
+    background-image: url(../img/wallpaper.jpg);
+    height: 46.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-top {
+    background-color: rgb(26, 31, 30, .85);
+    padding-top: 2.3rem;
+    width: 100rem;
+}
+
+.header .top-bar{
+    display: flex;
+}
+
+.header a{
+}
+
+.logo a{
+    background-color: #b1040e;
+    padding: 7rem 1.8rem 2.01rem;
+}
+
+.header .top-bar img {
+    height: 40px;
+    margin-top: 5.4rem;
+    margin-left: 4rem;
+}
+
+.header .menu-top ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    padding-top: 2rem;
+}
+
+.header .menu-top ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 0;
+
+}
+
+.header .main-menu {
+    margin-left: 10rem;
+    padding-left: 5rem;
+}
+
+.header .main-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.header .main-menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.header span{
+    font-size: 5rem;
+}
+
+.header h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header p{
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.hero{
+    text-align: center;
+    margin-top: 15rem;
+}
+
+
+
+/*Footer*/
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
