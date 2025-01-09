@@ -1,30 +1,32 @@
-class Nodo {
-    constructor(value) {
+class NodoArbol {
+    constructor(value, left = null, right = null){
         this.value = value;
-        this.left = null;
-        this.right = null;
+        this.left = left;
+        this.right = right;
     }
 }
 
-function sonIdenticos(A, B){
-    // Inicio si ambos nodos son nulos, son identicos
-    if(A === null && B === null) {
+function sonIdenticos(arbolA, arbolB){
+    if(arbolA === null && arbolB === null){
         return true;
-    }else(A === null || B === null);
+    }
+
+    if(arbolA === null || arbolB === null){
         return false;
+    }
+
     return(
-        A.value === B.value &&
-        sonIdenticos(A.left, B.left) &&
-        sonIdenticos(A.right, B.right)
+        arbolA.value === arbolB.value &&
+        sonIdenticos(arbolA.left, arbolB.left) &&
+        sonIdenticos(arbolA.right, arbolB.right)
     );
 }
 
-const treeA = new TreeNode(1);
-treeA.left = new TreeNode(2);
-treeA.right = new TreeNode(3);
 
-const treeB = new TreeNode(1);
-treeB.left = new TreeNode(2);
-treeB.right = new TreeNode(3);
+const treeA = new NodoArbol(1, new NodoArbol(2), new NodoArbol(3));
+const treeB = new NodoArbol(1, new NodoArbol(2), new NodoArbol(3));
+const treeC = new NodoArbol(1, new NodoArbol(2), new NodoArbol(4));
 
-console.log(sonIdenticos(treeA, treeB));
+
+console.log(sonIdenticos(treeA, treeB)); 
+console.log(sonIdenticos(treeA, treeC));
