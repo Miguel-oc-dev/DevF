@@ -19,36 +19,36 @@ const SimpleForm = () => {
             //* VA TODO NUESTRO DISEÑO HTML
             //? Paso #1: Crear el formulario base en JSX
             <div className='login'>
-            <div className='login-container'>
-            <img src={reactLogo} className='logo react' alt='React logo' />
+                <div className='login-container'>
+                <img src={reactLogo} className='logo react' alt='React logo' />
 
-            <form onSubmit={handleSubmit}>
-                {/* Paso #3: Guardo la información en el estado de */}
-                <label htmlFor='email'>Email</label>
-                <input
-                type='text'
-                name='email'
-                placeholder='correo@mail.com'
-                id='simple-email'
-                onChange={(event) => setEmail(event.target.value)}
-                value={email}
+                <form onSubmit={handleSubmit}>
+                    {/* Paso #3: Guardo la información en el estado de */}
+                    <label htmlFor='email'>Email</label>
+                    <input
+                        type='text'
+                        name='email'
+                        placeholder='correo@mail.com'
+                        id='simple-email'
+                        onChange={(event) => setEmail(event.target.value)}
+                        value={email}
 
-                />
-                <label htmlFor='password'>Password</label>
-                <input
-                type='password'
-                name='password'
-                id='simple-password'
-                onChange={(event) => (event.target.value)}
-                value={password}
-                />
+                    />
+                    <label htmlFor='password'>Password</label>
+                    <input
+                        type='password'
+                        name='password'
+                        id='simple-password'
+                        onChange={(event) => (event.target.value)}
+                        value={password}
+                    />
 
-                <button type='submit'>
-                Iniciar Sesion
-                </button>
+                    <button type='submit'>
+                        Iniciar Sesion
+                    </button>
 
-            </form>
-            </div>
+                </form>
+                </div>
             </div>
         </div>
     );
