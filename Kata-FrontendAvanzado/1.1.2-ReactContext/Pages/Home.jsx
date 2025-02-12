@@ -1,18 +1,22 @@
-import SongList from "../src/Components/SongList"
-import SongDetail from "../src/Components/SongDetail"
+import SongList from "../Components/SongList"
+import SongDetail from "../Components/SongDetail"
+import { SongProvider } from "../Context/SongContext"
 import './home.css'
+
 const Home = () => {
     return (
-        <div className="home-container">
-            <div className="left">
-                <p> lado izquierdo </p>
-                <SongList />
+        <SongProvider>
+            <div className='home-container'>
+                <div className='left'>
+                    <p>Song List</p>
+                    <SongList />
+                </div>
+                <div className='right'>
+                    <p>Song Detail</p>
+                    <SongDetail />
+                </div>
             </div>
-            <div className="right">
-                <p>lado derecho</p>
-                <SongDetail />
-            </div>
-        </div>
+        </SongProvider>
     )
 }
 
