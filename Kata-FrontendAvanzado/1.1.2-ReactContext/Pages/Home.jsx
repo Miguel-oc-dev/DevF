@@ -1,6 +1,6 @@
-import SongList from "../Components/SongList"
-import SongDetail from "../Components/SongDetail"
-import { SongProvider } from "../Context/SongContext"
+import SongList from "../src/Components/SongList"
+import SongDetail from "../src/Components/SongDetail"
+import { SongProvider } from "../src/Context/SongContext"
 import './home.css'
 
 const Home = () => {
