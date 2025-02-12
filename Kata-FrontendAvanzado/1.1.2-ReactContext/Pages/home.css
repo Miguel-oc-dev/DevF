@@ -1,0 +1,31 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    min-height: 100vh;
+    color: #d8d8d8;
+}
+
+.left {
+    flex: 1; /* Permite que ambas secciones ocupen el mismo espacio */
+    background-color: #333333;
+    border-right: 1px solid #555555; /* Añade una línea divisoria */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.right {
+    flex: 1; /* Permite que ambas secciones ocupen el mismo espacio */
+    background-color: #444444;
+    border-left: 1px solid #555555; /* Añade una línea divisoria */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Añade efectos hover para mejorar la interactividad */
+.left:hover {
+    background-color: #3a3a3a;
+}
+
+.right:hover {
+    background-color: #4a4a4a;
+}
