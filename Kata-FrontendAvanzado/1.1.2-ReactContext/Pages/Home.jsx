@@ -2,7 +2,7 @@ import SongList from "../src/Components/SongList"
 import SongDetail from "../src/Components/SongDetail"
 import { SongProvider } from "../src/Context/SongContext"
 import './home.css'
-import Header from "../Components/Header"
+import Header from "../src/Components/Header"
 
 const Home = () => {
     return (
