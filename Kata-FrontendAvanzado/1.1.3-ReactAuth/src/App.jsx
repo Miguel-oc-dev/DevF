@@ -1,11 +1,16 @@
 import Header from '@/Components/Header'
 import './App.css'
+import RoutesIndex from '@/Routes/RoutesIndex'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <Header/>
+      <BrowserRouter>
+        <Header />
+        <RoutesIndex />
+      </BrowserRouter>
     </>
   )
 }
