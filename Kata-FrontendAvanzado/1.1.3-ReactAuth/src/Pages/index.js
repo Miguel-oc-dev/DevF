@@ -2,7 +2,7 @@ import Dashboard from './Dashboard'
 import Home from './Home'
 import Login from './Login'
 import Secret from './Secret'
-import Singup from './Singup'
+import Signup from './Signup'
 
 
 export {
@@ -10,5 +10,5 @@ export {
     Home,
     Login,
     Secret,
-    Singup
+    Signup
 }
