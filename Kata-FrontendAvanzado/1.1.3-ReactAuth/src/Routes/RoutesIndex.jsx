@@ -1,5 +1,5 @@
 import { Routes, Route} from 'react-router-dom'
-import { Home, Dashboard, Login, Secret, Singup} from '@/Pages'
+import { Home, Dashboard, Login, Secret, Signup} from '@/Pages'
 
 const RoutesIndex = () => {
     return (
@@ -11,7 +11,7 @@ const RoutesIndex = () => {
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/login' element={<Login />} />
             <Route path='/secret' element={<Secret />} />
-            <Route path='/singup' element={<Singup />} />
+            <Route path='/signup' element={<Signup />} />
         </Routes>
     </>
     )
