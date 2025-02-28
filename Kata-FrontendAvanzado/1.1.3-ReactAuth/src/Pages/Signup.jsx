@@ -7,7 +7,7 @@ import '@/styles/form.css'
 const Signup = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const navigate = useNavigate(); // hook - react-router-dom redirigir a un usuario a diferentes rutas de la aplicación
-    
+
     const onSubmit = async (data) => {
         try{
         const response = await registerUserService(data);
@@ -16,8 +16,7 @@ const Signup = () => {
         // console.log(response)
         console.log('Usuario creado exitosamente')
         }
-        }
-        catch(error){
+        }catch(error){
         console.log('Ocurrio un error en Signup', error)
         }
     }
@@ -27,7 +26,7 @@ const Signup = () => {
         <h1>Signup</h1>
         <main className='form-signin w-100 m-auto'>
         <form onSubmit={handleSubmit(onSubmit)}>
-            <img className='mb-4' src={reactLogo} alt='' width='72' height='57' />
+            <img className='mb-4 img' src={reactLogo} alt='' width='72' height='57' />
             <h1 className='h3 mb-3 fw-normal'>Please sign up</h1>
 
             <div className='form-floating'>
@@ -36,7 +35,6 @@ const Signup = () => {
                 className='form-control'
                 id='first_name'
                 name='first_name'
-                onChange={() => {}}
                 placeholder='John'
                 {...register('first_name')}
             />
@@ -50,7 +48,6 @@ const Signup = () => {
                 className='form-control'
                 id='last_name'
                 name='last_name'
-                onChange={() => {}}
                 placeholder='Doe'
                 {...register('last_name')}
             />
@@ -63,7 +60,6 @@ const Signup = () => {
                 className='form-select'
                 id='gender'
                 name='gender'
-                onChange={() => {}}
                 {...register('gender')}
             >
                 <option value=''>Choose...</option>
@@ -80,7 +76,6 @@ const Signup = () => {
                 className='form-control'
                 id='email'
                 name='email'
-                onChange={() => {}}
                 placeholder='name@example.com'
                 {...register('email')}
             />
@@ -94,7 +89,6 @@ const Signup = () => {
                 className='form-control'
                 id='password'
                 name='password'
-                onChange={() => {}}
                 placeholder='Password'
                 {...register('password')}
             />
