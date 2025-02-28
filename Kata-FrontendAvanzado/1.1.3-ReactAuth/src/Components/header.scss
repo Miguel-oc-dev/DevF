@@ -1,46 +1,78 @@
-// crear un color 
-// declarar una variable
+// Crear un color 
+// Declarar una variable
 $menu-color: #3d3d3d;
+$hover-color: #ff6600; // Nuevo color para hover
+$font-family: 'Roboto, San Serif, Arial'; // Definir una familia de fuentes
 
-//mixins para reutilizar estilos 
-@mixin header-link{
+// Mixins para reutilizar estilos 
+@mixin header-link {
     color: $menu-color;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    transition: color 0.3s ease; // Transición para suavizar el cambio de color
 }
 
-@mixin header-border($size: 2px){
+@mixin header-border($size: 2px) {
     border-bottom: solid $size $menu-color;
+    transition: border-bottom-color 0.3s ease; // Transición para suavizar el cambio de borde
 }
 
-//Aplicando BEM EN SCSS
-.header{
+// Aplicando BEM EN SCSS
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;
+    padding: 15px 30px; // Aumentar el padding para mayor espacio
+    background-color: #e9e1e1; // Fondo claro para el header
+    font-family: $font-family;
 
-    &__logo{
+    &__logo {
         @include header-link;
+        font-size: 1.5rem; // Aumentar tamaño de fuente del logo
+        font-weight: bold; // Poner en negrita el logo
+    }
+    
+    &__list-item{
+        list-style: none;
     }
 
-    &__nav-list{
+    &__nav-list {
         display: flex;
         list-style: none;
         column-gap: 20px;
         flex-wrap: wrap;
     }
 
-    &__item-link{
-        @include header-link;  
+    &__item-link {
+        @include header-link;
+        padding: 5px 10px; // Añadir padding para mayor espacio clickable
+        position: relative; // Necesario para el pseudo-elemento
 
-        //indicamos cual es el estilo activo 
-        &--is-active{
-            @include header-border($size:3px);
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 0;
+            background: $hover-color;
+            transition: width 0.3s ease;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
         }
 
-        &:hover{
+        &:hover {
+            color: $hover-color; // Cambio de color en hover
             @include header-border();
+            
+            &::after {
+                width: 100%; // Subrayado completo en hover
+            }
+        }
+
+        // Indicamos cual es el estilo activo 
+        &--is-active {
+            @include header-border($size: 3px);
+            font-weight: bold; // Negrita para el enlace activo
         }
     }
 }
