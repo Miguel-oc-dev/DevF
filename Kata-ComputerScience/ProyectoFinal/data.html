@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestor de Alumnos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="top-bar">
+      <div class="logo">
+        <a href="#">
+          <img src="https://alumni.stanford.edu/static/saa-logo-white-60c4ed2e1cacf3b7e476858e65cecb27.svg" alt="Stanford Logo" />
+        </a>
+      </div>
+      <nav class="menu-top">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contactar</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <span>Gestor de Alumnos</span>
+      <p>Agrega y administra estudiantes fácilmente.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="highlight">
+      <h2>Alta de Alumnos</h2>
+      <form id="form-alta" class="form-alumno">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="apellidos" placeholder="Apellidos" required />
+        <input type="number" id="edad" placeholder="Edad" required />
+        <button type="submit">Agregar Alumno</button>
+      </form>
+    </section>
+
+    <section class="stories">
+      <h2>Lista de Alumnos</h2>
+      <div id="lista-alumnos" class="grid"></div>
+    </section>
+
+    <section class="highlight">
+      <h2>Gestión de Clases y Grupos</h2>
+      <form id="form-clase" class="form-alumno">
+        <input type="text" id="clase" placeholder="Nombre de la clase" required />
+        <input type="text" id="alumno-clase" placeholder="Nombre del alumno a inscribir" required />
+        <button type="submit">Inscribir Alumno</button>
+      </form>
+    </section>
+
+    <section class="stories">
+      <h2>Buscar y Ordenar</h2>
+      <form id="form-busqueda" class="form-alumno">
+        <input type="text" id="buscar-nombre" placeholder="Buscar por nombre" />
+        <input type="text" id="buscar-apellido" placeholder="Buscar por apellido" />
+        <button type="button" id="btn-buscar">Buscar</button>
+      </form>
+      <div class="ordenamientos">
+        <button id="ordenar-asc">Ordenar por calificación ASC</button>
+        <button id="ordenar-desc">Ordenar por calificación DESC</button>
+        <button id="ordenar-edad">Ordenar por edad</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#">Stanford<br>University</a>
+    <p>© Stanford University. Stanford, California 94305.</p>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
