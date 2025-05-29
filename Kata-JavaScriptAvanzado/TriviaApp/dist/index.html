@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia App</title>
+</head>
+<body>
+    <main class="trivia">
+        <h1 class="trivia__title">Trivia App</h1>
+        <form class="trivia__form">
+        <select id="category"></select>
+        <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium">Media</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <select id="type">
+            <option value="multiple">Múltiple</option>
+            <option value="boolean">Verdadero/Falso</option>
+        </select>
+        <button type="submit">Iniciar Trivia</button>
+        </form>
+        <section id="questions" class="trivia__questions"></section>
+        <div class="trivia__results" id="results"></div>
+        <button id="newTrivia" style="display:none">Crear Nueva Trivia</button>
+    </main>
+</body>
+</html>

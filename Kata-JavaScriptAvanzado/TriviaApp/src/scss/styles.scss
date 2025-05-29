@@ -1,0 +1,21 @@
+.trivia {
+    &__title {
+        text-align: center;
+    }
+
+    &__form, &__questions {
+        max-width: 600px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    &__question {
+        margin-bottom: 1rem;
+    }
+
+    &__results {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+}
