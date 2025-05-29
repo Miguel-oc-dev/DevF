@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Callbacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="1.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Ejercicio 1: Mensajes en consola con Callbacks</h1>
+
+        <div class="buttons">
+            <button onclick="ejecutarLog()">Mostrar console.log</button>
+            <button onclick="ejecutarInfo()">Mostrar console.info</button>
+            <button onclick="ejecutarWarn()">Mostrar console.warn</button>
+            <button onclick="ejecutarError()">Mostrar console.error</button>
+        </div>
+
+        <hr>
+        <h2>Ejercicio 2: Identificar tipo de dato</h2>
+        <p>Haz clic en un tipo de dato para identificarlo:</p>
+
+        <div class="buttons">
+            <button onclick="ejecutarIdentificacionConString()">String</button>
+            <button onclick="ejecutarIdentificacionConNumero()">Number</button>
+            <button onclick="ejecutarIdentificacionConObjeto()">Object</button>
+            <button onclick="ejecutarIdentificacionConBooleano()">Boolean</button>
+        </div>
+
+
+        <hr>
+        <h2>Ejercicio 3: Operaciones matemáticas con Callback</h2>
+        <p>Haz clic en una operación para aplicarla a los números 10 y 5:</p>
+
+        <div class="buttons">
+            <button onclick="ejecutarSuma()">Suma</button>
+            <button onclick="ejecutarResta()">Resta</button>
+            <button onclick="ejecutarMultiplicacion()">Multiplicación</button>
+            <button onclick="ejecutarDivision()">División</button>
+        </div>
+
+
+        <hr>
+        <h2>Ejercicio 4: Transformar cadena con Callback</h2>
+        <p>Convierte la cadena <code>"PejeLagarto"</code> a mayúsculas o minúsculas:</p>
+
+        <div class="buttons">
+            <button onclick="ejecutarMayusculas()">Convertir a MAYÚSCULAS</button>
+            <button onclick="ejecutarMinusculas()">Convertir a minúsculas</button>
+        </div>
+
+
+        <hr>
+        <h2>Ejercicio 5: Filtrar tiempos mayores a 2 horas</h2>
+        <p>Del arreglo <code>[120, 80, 200, 100]</code>, filtra los tiempos mayores a 2 horas:</p>
+
+        <div class="buttons">
+            <button onclick="ejecutarFiltroTiempos()">Filtrar tiempos</button>
+        </div>
+
+    </main>
+</body>
+</html>
